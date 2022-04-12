@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+    integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 540px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-left-align w3-large" id="nav"> 
+
+      <a class="w3-bar-item w3-padding-large" id="heading" >AL-REHMAN ELECTRICAL & PLUMBLING WORKS</a>
+
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large w3-blue"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      
+        <div class="links">
+          <a href="#" class="w3-bar-item w3-padding-large w3-hide-small home">Home</a>
+      <a href="#" class="w3-bar-item  w3-hide-small w3-padding-large dropdown-toggle dropdownbtn Services"
+      id="dropdownMenuButton" data-toggle="dropdown" 
+      >Services</a>
+    <div class="dropdown-menu" id="drop" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item "  id="ele" href="#eLe">ELECTRICIAN</a>
+      <a class="dropdown-item "  id="mpt" href="#MPT">MOBILE PHONE TECHNICIAN</a>
+      <a class="dropdown-item"  id="hms" href="#HMS">HOME MAINTENANCE SERVICES</a>
+    </div>
+    <a href="#about" class="w3-bar-item  w3-hide-small w3-padding-large about" >About Us</a>   
+          <a href="#div" class="w3-bar-item  w3-hide-small w3-padding-large Contact "
+        data-toggle="modal" data-target="#exampleModalLong">
+        Contact Us</a>
+        </div>
+  </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-blue w3-hide  w3-hide-large w3-hide-medium w3-large" >
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-yellow" style="text-align: center; font-family:cursive; font-weight: bold; color: yellow;">Services</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-yellow" style="text-align: center; font-family:cursive; font-weight: bold; color: yellow;">About Us</a>
+      <a href="#div" class="w3-bar-item w3-button w3-padding-large w3-hover-yellow" style="text-align: center; font-family:cursive; font-weight: bold; color: yellow;" data-toggle="modal"
+        data-target="#exampleModalLong">Contact Us</a>
+    </div>
+  </div>
+
+   <br>
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding: 80px 16px">
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner" style="border-radius: 20px;">
+        <div class="carousel-item active">
+          <img src="pics/1.jpg" alt="ELECTRICAL" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="pics/home.jpg" alt="HOME MAINTACNE" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="pics/3.jpg" alt="MOBLIE REPAIRING" width="1100" height="500">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container ele   " id="eLe">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1><u>ELECTRICIAN</u></h1>
+        <p class="w3-text-grey">
+        <ul>
+          <li style="margin-top: 30px;">Installs and repairs electrical wiring, systems, and fixtures in buildings.</li>
+          <br>
+          <li>Installs conduits and pipes to house electrical wires and cables.</li> <br>
+          <li> Ensures piping complies with electrical codes.</li><br>
+          <li> Installs circuit breakers and other electrical hardware and connects wiring to them.</li><br>
+          <li> Electricians get electrical power from its source to end-users, install it safely, and perform testing,
+            maintenance, and repairs to keep it functioning properly.</li>
+
+        </ul>
+        </p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <img style="width: 500px; border-radius: 20px;" src="pics/prara.jpg" />
+      </div>
+    </div>
+  </div>
+  <hr style=" background-color: orange; height: 2px;">
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-bar-block w3-padding-64 w3-container" style="padding-left: 0PX;" id="MPT">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <img style="width: 490px; padding: left 50px; float: right; border-radius: 20px;" src="pics/phone.jpg" />
+      </div>
+
+      <div class="w3-twothird" style="float: right; padding-left: 100px;">
+        <h1><U>MOBILE PHONE TECHNICIAN</U></h1> <br>
+        <p class="w3-text-grey">
+          <sperm style="font-weight: bolder;">Mobile phone repair technicians includes </sperm>
+        <ul>
+          <li>Tests to assess the mobile phones'funcationality, install and update phone software.</li> <br>
+          <li>Troubleshoot wiring problems, and replace damaged parts and components such as batteries, LCD screens,
+            keypads and buttons etc.</li> <br>
+          <li> Phone technicians may also be on call or need to travel to remotely repair devices.</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr style=" background-color: orange; height: 2px;">
+
+  <!-- Third Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container" id="HMS">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1><u>HOME MAINTENANCE SERVICES</u></h1> <br>
+        <p class="w3-TEXT-BLACK">
+          <sperm style="font-weight: bolder;">Home Maintenance Services includes </sperm> <br>
+        <ul>
+          <li> Perform maintenance and light repairs.</li> <br>
+          <li>Repair and installing equipment or appliances.</li> <br>
+          <li>Assist tradespeople with electrical, plumbling or HVAC repairs</li> <br>
+          <li>Troubleshooting system failures.</li>
+          <br>
+          <li>Responding to fault request, Routinely inspecting electrical system.</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <img style="width: 500px; border-radius: 20px;" src="pics/Service-Maintenance-Transparent.png" />
+      </div>
+    </div>
+  </div>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='fas fa-angle-double-up'
+      style='font-size:24px; color:  rgb(55, 151, 211);'></i></button>
+
+  <!-- Modal -->
+  <div id="div">
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle" style="font-family:cursive;">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: center;">
+            <div class="w3-center">
+              <img class="center" src="pics/Fullsize.png" alt="Img" width="480" height="200" style="padding-left: 150px;"> 
+              <br><br><H4 style="font-family:cursive;">Al-Rehman Electrical & Plumbling Works</H4>
+            </div>
+            <hr style=" background-color: orange; height: 2px;">
+            <h5 style="font-family:cursive;">Name</h5>
+            <p style="font-family:cursive;">Usman Ghani</p>
+            <hr style=" background-color: orange; height: 2px;">
+            <h5 style="font-family:cursive;"><i class="fa-solid fa-envelope"></i> Email</h5>
+            <p style="font-family:cursive;">ALRehmanEHP2021@gmail.com</p>
+            <hr style=" background-color: orange; height: 2px;">
+            <h5 style="font-family:cursive;"><i class="fa-solid fa-phone"></i> Phone</h5>
+            <a href="https://web.whatsapp.com/"><p class="Nozoom1">+92 321-355-4372</p></a>
+         
+          </div>
+          <div class="modal-footer">
+            <a href="https://maps.app.goo.gl/SVrYHEQaQEsyndSj9"><button type="button" class="btn btn-primary Location"
+                style="font-family:cursive;"><i class="fa-solid fa-location-pin"></i> Location</button></a>
+           <button  class="btn btn-secondary footerback" data-dismiss="modal"
+              style="font-family:cursive;"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity" id="about"  style="border-top-left-radius: 50px; border-top-right-radius: 50px;">
+
+
+    <div class="w3-container  w3-center  w3-padding-64 " >
+      <h1 class="w3-margin w3-xlarge">
+        <spram style="color: black; font-size:50px; font-family:'Courier New', Courier, monospace;">ABOUT US
+        </spram> 
+      </h1>
+      <div class="w3-third w3-center">
+      <h3 class="w3-center  w3-center w3-padding-16" style="font-family:cursive;"><u>Services</u></h3>
+      <hr style=" background-color: orange; height: 10px;">
+      <br><br>
+      <h4 class="w3-wide w3-center"   style="font-family:cursive;">ELECTRICIAN</h4>
+      <div class="w3-light-grey w3-center" style=" border-radius: 20px;"> 
+      <div class="w3-container w3-padding-small  w3-center" style="width:100%;  border-radius: 20px; background-color:orange;"></div>
+    </div>
+    <br>
+    <h4 class="w3-wide"   style="font-family:cursive;">MOBLIE PHONE TECHNICIAN</h4>
+    <div class="w3-light-grey" style=" border-radius: 20px;">
+      <div class="w3-container w3-padding-small  w3-center" style="width:100%;  border-radius: 20px; background-color:orange;"></div>
+    </div>
+    <br>
+    <h4 class="w3-wide"   style="font-family:cursive;">HOME MAINTENANCE WORKS</h4>
+    <div class="w3-light-grey" style=" border-radius: 20px;">
+      <div class="w3-container w3-padding-small  w3-center" style="width: 100%;  border-radius: 20px; background-color: orange;"></div>
+    </div>
+    </div>
+    <div class="w3-third w3-center  ">
+      <h3 class="w3-center w3-padding-16" style="font-family:cursive; font-style: oblique;"><u>Areas We Serve In Karachi</u></h3>
+      <hr style=" background-color: orange;height: 10px;">
+      <br>
+      <div style="font-size: 23px; padding-top: 25px; padding-left: 45px;">
+        <div class="w3-container w3-padding-small  " style="width:80%; font-style: oblique;">SHAH FAISAL COLONY,</div> 
+        <div class="w3-container w3-padding-small  " style="width:80%; font-style: oblique;">MALIR,</div> <br>
+        <div class="w3-container w3-padding-small  " style="width:80%; font-style: oblique;">AZEEM TOWN,</div>
+        <div class="w3-container w3-padding-small  " style="width:80%; font-style: oblique;">GREEN TOWN,</div>
+      </div>  
+    </div>
+    <div class="Contact w3-third w3-center  ">
+      <h3 class="w3-center w3-padding-16" style="font-family:cursive; font-style: oblique;"><u>Contact Information</u></h3>
+      <hr style=" background-color: orange; height: 10px;">
+      <br>
+      <div style="font-size: 23px; padding-top: 25px; padding-left: 45px;">
+        <h5 style="font-family:cursive;"><i class="fa-solid fa-phone"></i> Phone:</h5>
+        <a href="https://web.whatsapp.com/" style="color: aliceblue;"><p class="Nozoom">+92 321-355-4372</p></a> <br>
+        <h5 style="font-family:cursive;;"><i class="fa-solid fa-user-clock"></i> Working Days And Hours:</h5>
+        <p style="font-family:cursive; color: black;">Saturday-Thursday <br> 10(AM) to 11(PM)</p>
+      </div>  
+      <a href="#div"  data-toggle="modal"
+      data-target="#exampleModalLong"><p class="zoom">More Details</p></a>
+    </div>
+  </div>
+
+
+  <hr style=" background-color: orange; height: 2px;">
+
+    <div class="w3-xlarge w3-padding-32">
+      <i class="fa-brands fa-facebook w3-hover-opacity"></i>
+      <i class="fa-brands fa-instagram w3-hover-opacity"></i>
+    </div>
+    <p><i class="fa-regular fa-copyright"></i> Copyright 2022 <spram style="color: black; font-style:italic">AL-REHMAN
+        ELECTRIC WORKS AND HOME SERVICES.</spram>All right reserved.</p>
+  </footer>
+</div>
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+  </script>
+
+</body>
+
+</html>
